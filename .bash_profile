@@ -10,5 +10,8 @@ fi
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
 
 export PATH
-export PATH="$HOME/.ndenv/bin:$PATH"
-eval "$(ndenv init -)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/dev/flutter/bin:$PATH"
+export DISPLAY=:1
+eval "$(rbenv init -)"
+source ~/.shell_prompt.sh
