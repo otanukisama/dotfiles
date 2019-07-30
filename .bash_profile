@@ -8,10 +8,13 @@ fi
 # User specific environment and startup programs
 
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
+PATH="$HOME/.rbenv/bin:$PATH"
+PATH="$HOME/dev/flutter/bin:$PATH"
+PATH="/usr/local/jmeter/bin:$PATH"
 
 export PATH
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/dev/flutter/bin:$PATH"
-export DISPLAY=:1
 eval "$(rbenv init -)"
 source ~/.shell_prompt.sh
+
+export DB_USERNAME="root"
+export DB_PASSWORD=$DB_PASSWORD
